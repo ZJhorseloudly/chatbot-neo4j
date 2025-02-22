@@ -3,6 +3,7 @@
 ## 启动
 ```
 docker compose -f docker/docker-compose.dev.yml --env-file src/.env up --build
+sudo docker compose -f docker/docker-compose.dev.yml up --build
 ```
 ## 关闭 docker 服务
 ```
