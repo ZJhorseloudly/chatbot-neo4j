@@ -20,3 +20,19 @@ Environment="HTTPS_PROXY=http://localhost:7890"
 Environment="NO_PROXY=localhost,127.0.0.1"
 
 ```
+```
+# 停止所有容器但不删除它们
+sudo docker compose -f docker/docker-compose.dev.yml stop
+
+# 或者
+sudo docker compose -f docker/docker-compose.dev.yml pause
+
+# 查看所有容器状态
+sudo docker compose -f docker/docker-compose.dev.yml ps
+
+# 启动已停止的容器（不重新构建）
+sudo docker compose -f docker/docker-compose.dev.yml start
+
+# 重启容器
+sudo docker compose -f docker/docker-compose.dev.yml restart
+```
